@@ -1,0 +1,94 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Crocs Catalogue</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Joti+One&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <script defer src="variables.js"></script>
+    <script defer src="main.js"></script>
+  </head>
+  <body>
+    <div id="menuSidebar">
+      <div id="pagelogo">
+        <div class="imgs">
+          <img src="logos/logo.svg" alt="Crocs Logo" width="200px" />
+        </div>
+        <h1>Book Catalogue</h1>
+      </div>
+      <h3 class="totals" id="tBooks">
+        Total Books: <span id="totalBooks"></span>
+      </h3>
+      <h3 class="totals" id="tTitles">
+        Total Titles: <span id="totalTitles"></span>
+      </h3>
+      <section>
+        <input id="searchInput" type="text" placeholder="Search..." /><button
+          id="searchBtn"
+        >
+          🔍︎
+        </button>
+      </section>
+      <section>
+        <button id="displaybtn">Display All</button>
+      </section>
+      <section>
+        <div class="dropdown">
+          <button class="dropbtn">Genres</button>
+          <div class="dropdown-content">
+            <button class="dropContent" id="fantasybtn">Fantasy</button>
+            <button class="dropContent" id="mysterybtn">Mystery</button>
+            <button class="dropContent" id="scifibtn">Sci-Fi</button>
+            <button class="dropContent" id="romancebtn">Romance</button>
+            <button class="dropContent" id="thrillerbtn">Thriller</button>
+          </div>
+        </div>
+      </section>
+      <section>
+        <input
+          class="addInput"
+          id="titleInput"
+          type="text"
+          placeholder="Book title..."
+        />
+        <input
+          class="addInput"
+          id="authorInput"
+          type="text"
+          placeholder="Author..."
+        />
+        <input
+          class="addInput"
+          id="genreInput"
+          type="text"
+          placeholder="Genre..."
+        />
+        <input
+          class="addInput"
+          id="quantityInput"
+          type="number"
+          placeholder="Quantity..."
+        /><button id="addbtn">Add Book</button>
+      </section>
+    </div>
+    <div id="displayTop">
+      <table>
+        <tr>
+          <td>Title</td>
+          <td>Author</td>
+          <td>Genre</td>
+          <td>Quantity</td>
+        </tr>
+      </table>
+    </div>
+    <div id="display"><table id="displayTable"></table></div>
+  </body>
+</html>
